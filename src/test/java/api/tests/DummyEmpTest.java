@@ -2,6 +2,7 @@ package api.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
 
@@ -65,5 +66,10 @@ public class DummyEmpTest {
         response.then().log().all();
 
         Assert.assertEquals(response.getStatusCode(), 200);
+    }
+    
+    @BeforeMethod
+    public void waitDelay() throws InterruptedException {
+    	Thread.sleep(2000); 
     }
 }

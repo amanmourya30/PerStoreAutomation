@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "location": "New York",
+      "phone": "123-456-7890",
+      "courses": [
+        "Mathematics",
+        "Science"
+      ]
+    },
+    {
+      "id": 585,
+      "name": "Louis Ortiz",
+      "location": "South Shelbaville",
+      "phone": "1-448-005-7036",
+      "courses": [
+        "Mathematics",
+        "Science",
+        "History"
+      ]
+    }
+  ]
+}
