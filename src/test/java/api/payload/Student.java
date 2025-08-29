@@ -4,17 +4,17 @@ import java.util.List;
 
 public class Student {
 
-    int id;
+    String id;   // <-- changed from int to String
     String name;
     String location;
     String phone;
     List<String> courses;
 
     // Getters and Setters
-    public int getId() {
+    public String getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

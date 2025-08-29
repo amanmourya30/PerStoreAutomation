@@ -1,7 +1,7 @@
 {
   "students": [
     {
-      "id": "1",
+      "id": 1,
       "name": "John Doe",
       "location": "New York",
       "phone": "123-456-7890",
@@ -15,6 +15,28 @@
       "name": "Louis Ortiz",
       "location": "South Shelbaville",
       "phone": "1-448-005-7036",
+      "courses": [
+        "Mathematics",
+        "Science",
+        "History"
+      ]
+    },
+    {
+      "id": 763,
+      "name": "Darren Rosenbaum",
+      "location": "West Darrenport",
+      "phone": "858.336.2466",
+      "courses": [
+        "Mathematics",
+        "Science",
+        "History"
+      ]
+    },
+    {
+      "id": 471,
+      "name": "Zane Boehm DVM",
+      "location": "West Ashlyn",
+      "phone": "048.517.6427",
       "courses": [
         "Mathematics",
         "Science",

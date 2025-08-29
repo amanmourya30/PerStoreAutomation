@@ -1,42 +1,48 @@
 package api.endpoints;
 
+import static io.restassured.RestAssured.*;
+
+import api.payload.Student;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-import static io.restassured.RestAssured.given;
-
-import api.payload.Student;
-
 public class StudentsEndPoints {
 
-	// Create student
-	public static Response createStudent(Student payload) {
-		return given().contentType(ContentType.JSON).accept(ContentType.JSON).body(payload).log().body() // log request
-																											// JSON
-				.when().post(StudentsRoutes.post_url);
-	}
-
-	// Read student by ID
-	public static Response readStudent(int studentId) {
-		return given().pathParam("id", studentId).when().get(StudentsRoutes.get_url);
-	}
-
-	// Update student
-	public static Response updateStudent(int studentId, Student payload) {
+    // Create Student
+    public static Response createStudent(Student payload) {
         return given()
-                .contentType(ContentType.JSON)
-                .accept(ContentType.JSON)
-                .pathParam("id", studentId)
-                .body(payload)
-        .when()
-                .put(StudentsRoutes.update_url);
+                    .contentType(ContentType.JSON)
+                    .accept(ContentType.JSON)
+                    .body(payload)
+                .when()
+                    .post(StudentsRoutes.post_url);
     }
-	
-	// Delete student
-    public static Response deleteStudent(int studentId) {
+
+    // Read Student by ID
+    public static Response readStudent(String studentId) {
+        Response responce = given()
+                    .pathParam("id", studentId)
+                .when()
+                    .get(StudentsRoutes.get_url); // /students/{id}
+        return responce;
+    }
+
+    // Update Student by ID
+    public static Response updateStudent(String studentId, Student payload) {
         return given()
-                .pathParam("id", studentId)
-        .when()
-                .delete(StudentsRoutes.delete_url);
+                    .contentType(ContentType.JSON)
+                    .accept(ContentType.JSON)
+                    .pathParam("id", studentId)
+                    .body(payload)
+                .when()
+                    .put(StudentsRoutes.update_url); // /students/{id}
+    }
+
+    // Delete Student by ID
+    public static Response deleteStudent(String studentId) {
+        return given()
+                    .pathParam("id", studentId)
+                .when()
+                    .delete(StudentsRoutes.delete_url); // /students/{id}
     }
 }

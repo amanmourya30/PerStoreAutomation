@@ -6,7 +6,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
 import api.endpoints.StudentsEndPoints;
-import api.endpoints.StudentsRoutes;
 import api.payload.Student;
 import io.restassured.response.Response;
 
@@ -16,16 +15,14 @@ public class StudentsTest {
 
 	Faker faker;
 	Student studentPayload;
-	int studentId; // store ID for later tests
+	String studentId; // store ID for later tests
 
 	@BeforeClass
 	public void setupData() {
-		System.out.println("POST URL: " + StudentsRoutes.post_url);
-
 		faker = new Faker();
 		studentPayload = new Student();
 
-		studentPayload.setId(faker.number().numberBetween(100, 999));
+		studentPayload.setId(String.valueOf(faker.number().numberBetween(100, 999))); // now string
 		studentPayload.setName(faker.name().fullName());
 		studentPayload.setLocation(faker.address().city());
 		studentPayload.setPhone(faker.phoneNumber().cellPhone());
@@ -53,9 +50,8 @@ public class StudentsTest {
 		Response response = StudentsEndPoints.readStudent(studentId);
 		response.then().log().all();
 
-		System.out.println("Get Status Code: " + response.getStatusCode());
 		Assert.assertEquals(response.getStatusCode(), 200);
-		Assert.assertEquals(response.jsonPath().getInt("id"), studentId);
+		Assert.assertEquals(response.jsonPath().getString("id"), studentId); // use getString
 	}
 
 	@Test(priority = 3, dependsOnMethods = "testCreateStudent")
@@ -81,7 +77,7 @@ public class StudentsTest {
 		// json-server returns 200 for DELETE
 		Assert.assertEquals(response.getStatusCode(), 200);
 	}
-	
+
 	@BeforeMethod
 	public void delay() throws InterruptedException {
 		Thread.sleep(2000);
