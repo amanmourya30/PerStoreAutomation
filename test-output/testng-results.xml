@@ -1,49 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-29T18:04:01 IST" name="Default suite" finished-at="2025-08-29T18:04:13 IST" duration-ms="12023">
+  <suite started-at="2025-08-31T20:09:36 IST" name="Default suite" finished-at="2025-08-31T20:09:40 IST" duration-ms="4616">
     <groups>
     </groups>
-    <test started-at="2025-08-29T18:04:01 IST" name="Default test" finished-at="2025-08-29T18:04:13 IST" duration-ms="12023">
-      <class name="api.tests.StudentsTest">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.tests.StudentsTest@34e9fd99]" started-at="2025-08-29T18:04:01 IST" name="setupData" finished-at="2025-08-29T18:04:01 IST" duration-ms="281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupData -->
-        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.StudentsTest@34e9fd99]" started-at="2025-08-29T18:04:01 IST" name="delay" finished-at="2025-08-29T18:04:03 IST" duration-ms="2011" status="PASS">
+    <test started-at="2025-08-31T20:09:36 IST" name="Default test" finished-at="2025-08-31T20:09:40 IST" duration-ms="4616">
+      <class name="api.tests.diffWaysToCreatPostReqBody">
+        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.diffWaysToCreatPostReqBody@128d2484]" started-at="2025-08-31T20:09:36 IST" name="delay" finished-at="2025-08-31T20:09:36 IST" duration-ms="512" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delay -->
-        <test-method signature="testCreateStudent()[pri:1, instance:api.tests.StudentsTest@34e9fd99]" started-at="2025-08-29T18:04:03 IST" name="testCreateStudent" finished-at="2025-08-29T18:04:05 IST" duration-ms="2576" status="PASS">
+        <test-method signature="testUsingHashMap()[pri:1, instance:api.tests.diffWaysToCreatPostReqBody@128d2484]" started-at="2025-08-31T20:09:36 IST" name="testUsingHashMap" finished-at="2025-08-31T20:09:40 IST" duration-ms="3439" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateStudent -->
-        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.StudentsTest@34e9fd99]" started-at="2025-08-29T18:04:06 IST" name="delay" finished-at="2025-08-29T18:04:08 IST" duration-ms="2006" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delay -->
-        <test-method signature="testGetStudentById()[pri:2, instance:api.tests.StudentsTest@34e9fd99]" started-at="2025-08-29T18:04:08 IST" name="testGetStudentById" finished-at="2025-08-29T18:04:08 IST" depends-on-methods="api.tests.StudentsTest.testCreateStudent" duration-ms="929" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetStudentById -->
-        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.StudentsTest@34e9fd99]" started-at="2025-08-29T18:04:08 IST" name="delay" finished-at="2025-08-29T18:04:10 IST" duration-ms="2012" status="PASS">
+        </test-method> <!-- testUsingHashMap -->
+        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.diffWaysToCreatPostReqBody@128d2484]" started-at="2025-08-31T20:09:40 IST" name="delay" finished-at="2025-08-31T20:09:40 IST" duration-ms="514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delay -->
-        <test-method signature="testUpdateStudent()[pri:3, instance:api.tests.StudentsTest@34e9fd99]" started-at="2025-08-29T18:04:10 IST" name="testUpdateStudent" finished-at="2025-08-29T18:04:10 IST" depends-on-methods="api.tests.StudentsTest.testCreateStudent" duration-ms="39" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpdateStudent -->
-        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.StudentsTest@34e9fd99]" started-at="2025-08-29T18:04:10 IST" name="delay" finished-at="2025-08-29T18:04:13 IST" duration-ms="2012" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delay -->
-        <test-method signature="testDeleteStudent()[pri:4, instance:api.tests.StudentsTest@34e9fd99]" started-at="2025-08-29T18:04:13 IST" name="testDeleteStudent" finished-at="2025-08-29T18:04:13 IST" depends-on-methods="api.tests.StudentsTest.testCreateStudent" duration-ms="69" status="PASS">
+        <test-method signature="testDeleteStudent()[pri:2, instance:api.tests.diffWaysToCreatPostReqBody@128d2484]" started-at="2025-08-31T20:09:40 IST" name="testDeleteStudent" finished-at="2025-08-31T20:09:40 IST" depends-on-methods="api.tests.diffWaysToCreatPostReqBody.testUsingHashMap" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteStudent -->
-      </class> <!-- api.tests.StudentsTest -->
+      </class> <!-- api.tests.diffWaysToCreatPostReqBody -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

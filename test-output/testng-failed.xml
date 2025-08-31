@@ -3,16 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.tests.StudentsTest">
+      <class name="api.tests.diffWaysToCreatPostReqBody">
         <methods>
-          <include name="testCreateStudent"/>
-          <include name="testDeleteStudent"/>
-          <include name="testGetStudentById"/>
           <include name="delay"/>
-          <include name="setupData"/>
-          <include name="testUpdateStudent"/>
+          <include name="testUsingHashMap"/>
         </methods>
-      </class> <!-- api.tests.StudentsTest -->
+      </class> <!-- api.tests.diffWaysToCreatPostReqBody -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
