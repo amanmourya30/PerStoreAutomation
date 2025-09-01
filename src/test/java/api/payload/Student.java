@@ -1,22 +1,13 @@
 package api.payload;
 
-import java.util.List;
-
 public class Student {
 
-    String id;   // <-- changed from int to String
     String name;
     String location;
     String phone;
-    List<String> courses;
+    String courses[]; //changed from List of string to array of string
 
     // Getters and Setters
-    public String getId() {
-        return id;
-    }
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -39,10 +30,10 @@ public class Student {
         this.phone = phone;
     }
 
-    public List<String> getCourses() {
+    public String [] getCourses() {
         return courses;
     }
-    public void setCourses(List<String> courses) {
+    public void setCourses(String [] courses ) {
         this.courses = courses;
     }
 }

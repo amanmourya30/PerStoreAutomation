@@ -6,7 +6,7 @@
       <class name="api.tests.diffWaysToCreatPostReqBody">
         <methods>
           <include name="delay"/>
-          <include name="testUsingHashMap"/>
+          <include name="testDeleteStudent"/>
         </methods>
       </class> <!-- api.tests.diffWaysToCreatPostReqBody -->
     </classes>

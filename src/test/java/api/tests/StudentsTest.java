@@ -4,12 +4,12 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import com.github.javafaker.Faker;
+
 import api.endpoints.StudentsEndPoints;
 import api.payload.Student;
 import io.restassured.response.Response;
-
-import java.util.Arrays;
 
 public class StudentsTest {
 
@@ -21,12 +21,10 @@ public class StudentsTest {
 	public void setupData() {
 		faker = new Faker();
 		studentPayload = new Student();
-
-		studentPayload.setId(String.valueOf(faker.number().numberBetween(100, 999))); // now string
 		studentPayload.setName(faker.name().fullName());
 		studentPayload.setLocation(faker.address().city());
 		studentPayload.setPhone(faker.phoneNumber().cellPhone());
-		studentPayload.setCourses(Arrays.asList("Mathematics", "Science", "History"));
+		studentPayload.setCourses(new String[] { "Mathematics", "Science", "History" });
 	}
 
 	@Test(priority = 1)
@@ -41,7 +39,7 @@ public class StudentsTest {
 				"Expected status code 200 or 201 but got " + response.getStatusCode());
 
 		// save id for later tests
-		studentId = studentPayload.getId();
+		studentId = response.jsonPath().getString("id");
 		System.out.println(studentId);
 	}
 
