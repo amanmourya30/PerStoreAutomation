@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.tests.diffWaysToCreatPostReqBody">
+      <class name="api.pathQueryCookieHeader.HeadersDemo">
         <methods>
-          <include name="delay"/>
-          <include name="testDeleteStudent"/>
+          <include name="testHeader"/>
         </methods>
-      </class> <!-- api.tests.diffWaysToCreatPostReqBody -->
+      </class> <!-- api.pathQueryCookieHeader.HeadersDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
