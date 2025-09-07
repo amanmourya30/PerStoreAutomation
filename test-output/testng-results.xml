@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-05T00:02:16 IST" name="Default suite" finished-at="2025-09-05T00:02:33 IST" duration-ms="17372">
+  <suite started-at="2025-09-07T17:15:11 IST" name="Default suite" finished-at="2025-09-07T17:15:14 IST" duration-ms="2837">
     <groups>
     </groups>
-    <test started-at="2025-09-05T00:02:16 IST" name="Default test" finished-at="2025-09-05T00:02:33 IST" duration-ms="17372">
-      <class name="api.pathQueryCookieHeader.HeadersDemo">
-        <test-method signature="testHeadersInfo()[pri:2, instance:api.pathQueryCookieHeader.HeadersDemo@351d00c0]" started-at="2025-09-05T00:02:16 IST" name="testHeadersInfo" finished-at="2025-09-05T00:02:33 IST" duration-ms="16989" status="PASS">
+    <test started-at="2025-09-07T17:15:11 IST" name="Default test" finished-at="2025-09-07T17:15:14 IST" duration-ms="2837">
+      <class name="api.fileUploadAndDownload.fileUploadAndDownload">
+        <test-method signature="testSingleFileUpload()[pri:1, instance:api.fileUploadAndDownload.fileUploadAndDownload@351d00c0]" started-at="2025-09-07T17:15:11 IST" name="testSingleFileUpload" finished-at="2025-09-07T17:15:14 IST" duration-ms="2715" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHeadersInfo -->
-      </class> <!-- api.pathQueryCookieHeader.HeadersDemo -->
+        </test-method> <!-- testSingleFileUpload -->
+        <test-method signature="testFileDownload()[pri:2, instance:api.fileUploadAndDownload.fileUploadAndDownload@351d00c0]" started-at="2025-09-07T17:15:14 IST" name="testFileDownload" finished-at="2025-09-07T17:15:14 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFileDownload -->
+      </class> <!-- api.fileUploadAndDownload.fileUploadAndDownload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
