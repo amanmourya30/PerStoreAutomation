@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.pathQueryCookieHeader.HeadersDemo">
+      <class name="api.pathQueryCookieHeader.JSONSchemaValidation">
         <methods>
-          <include name="testHeader"/>
+          <include name="jsonSchemaValidationTest"/>
         </methods>
-      </class> <!-- api.pathQueryCookieHeader.HeadersDemo -->
+      </class> <!-- api.pathQueryCookieHeader.JSONSchemaValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
