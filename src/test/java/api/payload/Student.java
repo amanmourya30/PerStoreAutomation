@@ -1,11 +1,26 @@
 package api.payload;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Student {
 
     String name;
     String location;
     String phone;
     String courses[]; //changed from List of string to array of string
+    
+ // Constructor (optional)
+    public Student(String name, String location, String phone, String[] courses) {
+        this.name = name;
+        this.location = location;
+        this.phone = phone;
+        this.courses=courses;
+    }
+    
+    
+ // Default constructor (needed for deserialization)
+    public Student() {}
 
     // Getters and Setters
 
