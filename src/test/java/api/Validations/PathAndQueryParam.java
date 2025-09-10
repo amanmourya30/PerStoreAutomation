@@ -1,4 +1,4 @@
-package api.pathQueryCookieHeader;
+package api.Validations;
 
 import static io.restassured.RestAssured.given;
 
