@@ -1,25 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-10T23:38:55 IST" name="Default suite" finished-at="2025-09-10T23:39:10 IST" duration-ms="15356">
+  <suite started-at="2025-09-11T23:55:46 IST" name="Suite" finished-at="2025-09-11T23:55:58 IST" duration-ms="12381">
     <groups>
     </groups>
-    <test started-at="2025-09-10T23:38:55 IST" name="Default test" finished-at="2025-09-10T23:39:10 IST" duration-ms="15356">
-      <class name="api.Validations.Authentications">
-        <test-method signature="testBasicAuth()[pri:1, instance:api.Validations.Authentications@689604d9]" started-at="2025-09-10T23:38:55 IST" name="testBasicAuth" finished-at="2025-09-10T23:39:06 IST" duration-ms="10539" status="PASS">
+    <test started-at="2025-09-11T23:55:46 IST" name="Test1" finished-at="2025-09-11T23:55:56 IST" duration-ms="9867">
+      <class name="api.ChainingEndToEnd.CreatUser">
+        <test-method signature="test_createUser(org.testng.ITestContext)[pri:0, instance:api.ChainingEndToEnd.CreatUser@351d00c0]" started-at="2025-09-11T23:55:46 IST" name="test_createUser" finished-at="2025-09-11T23:55:56 IST" duration-ms="9704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@78ffe6dc]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBasicAuth -->
-        <test-method signature="testDigestAuth()[pri:2, instance:api.Validations.Authentications@689604d9]" started-at="2025-09-10T23:39:06 IST" name="testDigestAuth" finished-at="2025-09-10T23:39:08 IST" duration-ms="2404" status="PASS">
+        </test-method> <!-- test_createUser -->
+      </class> <!-- api.ChainingEndToEnd.CreatUser -->
+    </test> <!-- Test1 -->
+    <test started-at="2025-09-11T23:55:56 IST" name="Test2" finished-at="2025-09-11T23:55:57 IST" duration-ms="769">
+      <class name="api.ChainingEndToEnd.GetUser">
+        <test-method signature="test_getUser(org.testng.ITestContext)[pri:0, instance:api.ChainingEndToEnd.GetUser@139982de]" started-at="2025-09-11T23:55:56 IST" name="test_getUser" finished-at="2025-09-11T23:55:57 IST" duration-ms="761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2c0fefac]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDigestAuth -->
-        <test-method signature="testPreemptiveAuth()[pri:3, instance:api.Validations.Authentications@689604d9]" started-at="2025-09-10T23:39:08 IST" name="testPreemptiveAuth" finished-at="2025-09-10T23:39:10 IST" duration-ms="2140" status="PASS">
+        </test-method> <!-- test_getUser -->
+      </class> <!-- api.ChainingEndToEnd.GetUser -->
+    </test> <!-- Test2 -->
+    <test started-at="2025-09-11T23:55:57 IST" name="Test3" finished-at="2025-09-11T23:55:57 IST" duration-ms="897">
+      <class name="api.ChainingEndToEnd.UpdateUser">
+        <test-method signature="test_updateUser(org.testng.ITestContext)[pri:0, instance:api.ChainingEndToEnd.UpdateUser@7dcf94f8]" started-at="2025-09-11T23:55:57 IST" name="test_updateUser" finished-at="2025-09-11T23:55:57 IST" duration-ms="889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7e691624]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPreemptiveAuth -->
-      </class> <!-- api.Validations.Authentications -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- test_updateUser -->
+      </class> <!-- api.ChainingEndToEnd.UpdateUser -->
+    </test> <!-- Test3 -->
+    <test started-at="2025-09-11T23:55:57 IST" name="Test4" finished-at="2025-09-11T23:55:58 IST" duration-ms="671">
+      <class name="api.ChainingEndToEnd.DeleteUser">
+        <test-method signature="test_deleteUser(org.testng.ITestContext)[pri:0, instance:api.ChainingEndToEnd.DeleteUser@3eb25e1a]" started-at="2025-09-11T23:55:57 IST" name="test_deleteUser" finished-at="2025-09-11T23:55:58 IST" duration-ms="666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@34d26a68]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_deleteUser -->
+      </class> <!-- api.ChainingEndToEnd.DeleteUser -->
+    </test> <!-- Test4 -->
+  </suite> <!-- Suite -->
 </testng-results>
