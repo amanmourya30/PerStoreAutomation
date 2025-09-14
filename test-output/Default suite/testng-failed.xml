@@ -3,11 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.pathQueryCookieHeader.serializationAndDeserialization">
+      <class name="api.tests.DummyEmpTest">
         <methods>
-          <include name="testDeserialization"/>
+          <include name="testUpdateEmployee"/>
+          <include name="waitDelay"/>
+          <include name="testGetEmployeeById"/>
+          <include name="testCreateEmployee"/>
+          <include name="setupData"/>
+          <include name="testDeleteEmployee"/>
         </methods>
-      </class> <!-- api.pathQueryCookieHeader.serializationAndDeserialization -->
+      </class> <!-- api.tests.DummyEmpTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

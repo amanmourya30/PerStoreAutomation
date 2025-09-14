@@ -1,9 +1,7 @@
 package api.Validations;
 
 import static io.restassured.RestAssured.given;
-import io.restassured.matcher.RestAssuredMatchers;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
+
 import org.testng.annotations.Test;
 
 public class Authentications {
