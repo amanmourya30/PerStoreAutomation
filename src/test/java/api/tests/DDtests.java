@@ -1,5 +1,8 @@
 package api.tests;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import api.endpoints.StudentsEndPoints;
@@ -8,6 +11,9 @@ import api.utilities.DataProviders;
 import io.restassured.response.Response;
 
 public class DDtests {
+	
+	// store IDs globally for reuse in delete test
+    public static List<String> studentIds = new ArrayList<>();
 
     @Test(priority = 1, dataProvider = "AllStudentData", dataProviderClass = DataProviders.class)
     public void testPostStudent(String name, String location, String phone, String courses) {
@@ -25,12 +31,23 @@ public class DDtests {
 
 		// Accept either 200 or 201
 		Assert.assertTrue(response.getStatusCode() == 200 || response.getStatusCode() == 201,
-				"Expected status code 200 or 201 but got " + response.getStatusCode());
-
+				"Expected status code 200 or 201 but got " + response.getStatusCode());		
+		
 		// save id for later tests
-		String studentId = response.jsonPath().getString("id");
-		System.out.println(studentId);
+	    String studentId = response.jsonPath().getString("id");
+	    System.out.println("Created Student ID: " + studentId);
 
-        
+	    studentIds.add(studentId); // save to list 
     }
+    
+    @Test(priority = 2)
+    public void testDeleteStudents() throws InterruptedException {
+        for (String id : studentIds) {
+        	Thread.sleep(1000);
+            Response response = StudentsEndPoints.deleteStudent(id);
+            response.then().log().all();
+            Assert.assertEquals(response.getStatusCode(), 200, "Failed to delete student with ID: " + id);
+        }
+    }
+
 }

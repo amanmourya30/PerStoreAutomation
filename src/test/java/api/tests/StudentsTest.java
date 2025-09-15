@@ -78,6 +78,6 @@ public class StudentsTest {
 
 	@BeforeMethod
 	public void delay() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 }
