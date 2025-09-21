@@ -13,3 +13,48 @@
 22:32:32.640 [main] INFO  api.tests.StudentsTest - Delete Status Code: 200
 22:32:32.641 [main] INFO  api.tests.StudentsTest - Student deleted successfully with ID: 7a4c
 22:32:32.642 [main] INFO  api.tests.StudentsTest - ***** Finished testDeleteStudent *****
+14:15:36.541 [main] INFO  api.tests.StudentsTest - ***** Starting testCreateStudent *****
+14:15:38.826 [main] INFO  api.tests.StudentsTest - Create Status Code: 201
+14:15:39.454 [main] INFO  api.tests.StudentsTest - Student created with ID: a8f7
+14:15:39.454 [main] INFO  api.tests.StudentsTest - ***** Finished testCreateStudent *****
+14:15:40.483 [main] INFO  api.tests.StudentsTest - ***** Starting testGetStudentById *****
+14:15:40.525 [main] INFO  api.tests.StudentsTest - Successfully fetched student with ID: a8f7
+14:15:40.525 [main] INFO  api.tests.StudentsTest - ***** Finished testGetStudentById *****
+14:15:41.533 [main] INFO  api.tests.StudentsTest - ***** Starting testUpdateStudent *****
+14:15:41.548 [main] INFO  api.tests.StudentsTest - Update Status Code: 200
+14:15:41.548 [main] INFO  api.tests.StudentsTest - Student updated successfully with ID: a8f7
+14:15:41.549 [main] INFO  api.tests.StudentsTest - ***** Finished testUpdateStudent *****
+14:15:42.557 [main] INFO  api.tests.StudentsTest - ***** Starting testDeleteStudent *****
+14:15:42.575 [main] INFO  api.tests.StudentsTest - Delete Status Code: 200
+14:15:42.576 [main] INFO  api.tests.StudentsTest - Student deleted successfully with ID: a8f7
+14:15:42.576 [main] INFO  api.tests.StudentsTest - ***** Finished testDeleteStudent *****
+14:40:28.850 [main] INFO  api.tests.StudentsTest2 - ***** Starting testCreateStudent *****
+14:40:30.274 [main] INFO  api.tests.StudentsTest2 - Create Status Code: 201
+14:40:30.709 [main] INFO  api.tests.StudentsTest2 - Student created with ID: 67eb
+14:40:30.710 [main] INFO  api.tests.StudentsTest2 - ***** Finished testCreateStudent *****
+14:40:31.732 [main] INFO  api.tests.StudentsTest2 - ***** Starting testGetStudentById *****
+14:40:31.772 [main] INFO  api.tests.StudentsTest2 - Successfully fetched student with ID: 67eb
+14:40:31.772 [main] INFO  api.tests.StudentsTest2 - ***** Finished testGetStudentById *****
+14:40:32.788 [main] INFO  api.tests.StudentsTest2 - ***** Starting testUpdateStudent *****
+14:40:32.809 [main] INFO  api.tests.StudentsTest2 - Update Status Code: 200
+14:40:32.809 [main] INFO  api.tests.StudentsTest2 - Student updated successfully with ID: 67eb
+14:40:32.809 [main] INFO  api.tests.StudentsTest2 - ***** Finished testUpdateStudent *****
+14:40:33.822 [main] INFO  api.tests.StudentsTest2 - ***** Starting testDeleteStudent *****
+14:40:33.841 [main] INFO  api.tests.StudentsTest2 - Delete Status Code: 200
+14:40:33.841 [main] INFO  api.tests.StudentsTest2 - Student deleted successfully with ID: 67eb
+14:40:33.841 [main] INFO  api.tests.StudentsTest2 - ***** Finished testDeleteStudent *****
+14:53:45.330 [main] INFO  api.tests.StudentsTest2 - ***** Starting testCreateStudent *****
+14:53:46.774 [main] INFO  api.tests.StudentsTest2 - Create Status Code: 201
+14:53:47.360 [main] INFO  api.tests.StudentsTest2 - Student created with ID: 1f6a
+14:53:47.360 [main] INFO  api.tests.StudentsTest2 - ***** Finished testCreateStudent *****
+14:53:48.378 [main] INFO  api.tests.StudentsTest2 - ***** Starting testGetStudentById *****
+14:53:48.455 [main] INFO  api.tests.StudentsTest2 - Successfully fetched student with ID: 1f6a
+14:53:48.455 [main] INFO  api.tests.StudentsTest2 - ***** Finished testGetStudentById *****
+14:53:49.465 [main] INFO  api.tests.StudentsTest2 - ***** Starting testUpdateStudent *****
+14:53:49.493 [main] INFO  api.tests.StudentsTest2 - Update Status Code: 200
+14:53:49.493 [main] INFO  api.tests.StudentsTest2 - Student updated successfully with ID: 1f6a
+14:53:49.493 [main] INFO  api.tests.StudentsTest2 - ***** Finished testUpdateStudent *****
+14:53:50.497 [main] INFO  api.tests.StudentsTest2 - ***** Starting testDeleteStudent *****
+14:53:50.519 [main] INFO  api.tests.StudentsTest2 - Delete Status Code: 200
+14:53:50.519 [main] INFO  api.tests.StudentsTest2 - Student deleted successfully with ID: 1f6a
+14:53:50.519 [main] INFO  api.tests.StudentsTest2 - ***** Finished testDeleteStudent *****

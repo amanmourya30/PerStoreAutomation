@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-16T22:32:13 IST" name="Default suite" finished-at="2025-09-16T22:32:32 IST" duration-ms="18799">
+  <suite started-at="2025-09-21T14:15:33 IST" name="Suite" finished-at="2025-09-21T14:15:42 IST" duration-ms="9183">
     <groups>
     </groups>
-    <test started-at="2025-09-16T22:32:13 IST" name="Default test" finished-at="2025-09-16T22:32:32 IST" duration-ms="18799">
+    <test started-at="2025-09-21T14:15:33 IST" name="Test" finished-at="2025-09-21T14:15:42 IST" duration-ms="9183">
       <class name="api.tests.StudentsTest">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.tests.StudentsTest@54d9d12d]" started-at="2025-09-16T22:32:13 IST" name="setupData" finished-at="2025-09-16T22:32:16 IST" duration-ms="2388" status="PASS">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:api.tests.StudentsTest@38425407]" started-at="2025-09-21T14:15:33 IST" name="setupData" finished-at="2025-09-21T14:15:35 IST" duration-ms="1513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupData -->
-        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.StudentsTest@54d9d12d]" started-at="2025-09-16T22:32:16 IST" name="delay" finished-at="2025-09-16T22:32:17 IST" duration-ms="1015" status="PASS">
+        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.StudentsTest@38425407]" started-at="2025-09-21T14:15:35 IST" name="delay" finished-at="2025-09-21T14:15:36 IST" duration-ms="1004" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delay -->
-        <test-method signature="testCreateStudent()[pri:1, instance:api.tests.StudentsTest@54d9d12d]" started-at="2025-09-16T22:32:17 IST" name="testCreateStudent" finished-at="2025-09-16T22:32:29 IST" duration-ms="11721" status="PASS">
+        <test-method signature="testCreateStudent()[pri:1, instance:api.tests.StudentsTest@38425407]" started-at="2025-09-21T14:15:36 IST" name="testCreateStudent" finished-at="2025-09-21T14:15:39 IST" duration-ms="2928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateStudent -->
-        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.StudentsTest@54d9d12d]" started-at="2025-09-16T22:32:29 IST" name="delay" finished-at="2025-09-16T22:32:30 IST" duration-ms="1009" status="PASS">
+        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.StudentsTest@38425407]" started-at="2025-09-21T14:15:39 IST" name="delay" finished-at="2025-09-21T14:15:40 IST" duration-ms="1012" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delay -->
-        <test-method signature="testGetStudentById()[pri:2, instance:api.tests.StudentsTest@54d9d12d]" started-at="2025-09-16T22:32:30 IST" name="testGetStudentById" finished-at="2025-09-16T22:32:30 IST" depends-on-methods="api.tests.StudentsTest.testCreateStudent" duration-ms="205" status="PASS">
+        <test-method signature="testGetStudentById()[pri:2, instance:api.tests.StudentsTest@38425407]" started-at="2025-09-21T14:15:40 IST" name="testGetStudentById" finished-at="2025-09-21T14:15:40 IST" depends-on-methods="api.tests.StudentsTest.testCreateStudent" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetStudentById -->
-        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.StudentsTest@54d9d12d]" started-at="2025-09-16T22:32:30 IST" name="delay" finished-at="2025-09-16T22:32:31 IST" duration-ms="1016" status="PASS">
+        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.StudentsTest@38425407]" started-at="2025-09-21T14:15:40 IST" name="delay" finished-at="2025-09-21T14:15:41 IST" duration-ms="1004" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delay -->
-        <test-method signature="testUpdateStudent()[pri:3, instance:api.tests.StudentsTest@54d9d12d]" started-at="2025-09-16T22:32:31 IST" name="testUpdateStudent" finished-at="2025-09-16T22:32:31 IST" depends-on-methods="api.tests.StudentsTest.testCreateStudent" duration-ms="105" status="PASS">
+        <test-method signature="testUpdateStudent()[pri:3, instance:api.tests.StudentsTest@38425407]" started-at="2025-09-21T14:15:41 IST" name="testUpdateStudent" finished-at="2025-09-21T14:15:41 IST" depends-on-methods="api.tests.StudentsTest.testCreateStudent" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateStudent -->
-        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.StudentsTest@54d9d12d]" started-at="2025-09-16T22:32:31 IST" name="delay" finished-at="2025-09-16T22:32:32 IST" duration-ms="1001" status="PASS">
+        <test-method is-config="true" signature="delay()[pri:0, instance:api.tests.StudentsTest@38425407]" started-at="2025-09-21T14:15:41 IST" name="delay" finished-at="2025-09-21T14:15:42 IST" duration-ms="1005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delay -->
-        <test-method signature="testDeleteStudent()[pri:4, instance:api.tests.StudentsTest@54d9d12d]" started-at="2025-09-16T22:32:32 IST" name="testDeleteStudent" finished-at="2025-09-16T22:32:32 IST" depends-on-methods="api.tests.StudentsTest.testCreateStudent" duration-ms="96" status="PASS">
+        <test-method signature="testDeleteStudent()[pri:4, instance:api.tests.StudentsTest@38425407]" started-at="2025-09-21T14:15:42 IST" name="testDeleteStudent" finished-at="2025-09-21T14:15:42 IST" depends-on-methods="api.tests.StudentsTest.testCreateStudent" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteStudent -->
       </class> <!-- api.tests.StudentsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
